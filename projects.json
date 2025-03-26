@@ -1,0 +1,58 @@
+[
+    {
+      "title": "Task 1: HTML & CSS Basics",
+      "file": "tak19.txt"
+    },
+    {
+      "title": "Task 2: HTML & CSS Basics",
+      "file":  "task1_html.html"
+    },
+    {
+      "title": "Task 3: CSS Hover",
+      "file":"sample.html"
+    },
+    {
+      "title": "Task 4: Basics of JavaScript",
+      "file": "HTML.html"
+    },
+    {
+      "title": "Task 5: Calculations using JavaScript",
+      "file":  "calc_js.html"
+    },
+    {
+      "title": "Task 7: Console Output with JavaScript",
+      "file": "task_7.html"
+    },
+    {
+      "title": "Task 8: String Operations with JavaScript",
+      "file": "task_8.html"
+    },
+    {
+      "title": "Task 9: Conditional Operations with JavaScript",
+      "file": "HTML.html"
+    },
+    {
+      "title": "Task 10: Call Stack with Array",
+      "file": "array.html"
+    },
+    {
+      "title": "Task 11: Loop Operations",
+      "file": "do_while.html"
+    },
+    {
+      "title": "Task 12: Creating a Website of Car",
+      "file": "toyta.html"
+    },
+    {
+      "title": "Task 13: Classwork Objects",
+      "file": "carinfo.html"
+    },
+    {
+        "title": "Task 14: Classwork Functions",
+        "file": "random.html"
+      },
+      {
+        "title": "Task 14: Classwork class and bootstrap",
+        "file": "bootstr.html"
+      }
+  ]
