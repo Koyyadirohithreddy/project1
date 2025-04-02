@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Basic HTML Styling - Combined</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      background-color: #ccc;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    .content, .dashboard-box {
+      background-color: #dceff5;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .dashboard-box {
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #fff;
+      border: 2px solid #333;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Index Section -->
+  <div id="indexPage">
+    <h1>Welcome to My Custom Designed Page!</h1>
+    <div class="content">
+      <p>This is some random text! Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+      <p>Fugiat mollitia enim sunt sapiente nemo assumenda eius tenetur architecto repellat, minus aut!</p>
+      <p>Unde, ut hic. Pariatur repellat fugit esse explicabo officia!</p>
+    </div>
+    <button class="button" onclick="showDashboard()">Click here to see the Dashboard</button>
+  </div>
+
+  <!-- Dashboard Section -->
+  <div id="dashboardPage" class="hidden">
+    <h1>Dashboard</h1>
+    <div class="dashboard-box">
+      <h2>Welcome to the Custom Dashboard</h2>
+      <p>It doesn't have any functionalities yet!</p>
+    </div>
+    <button class="button" onclick="showIndex()">Click here to return to Home</button>
+  </div>
+
+  <script>
+    function showDashboard() {
+      document.getElementById('indexPage').classList.add('hidden');
+      document.getElementById('dashboardPage').classList.remove('hidden');
+    }
+
+    function showIndex() {
+      document.getElementById('dashboardPage').classList.add('hidden');
+      document.getElementById('indexPage').classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>

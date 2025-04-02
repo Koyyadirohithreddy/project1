@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+    <input placeholder="Enter A" id="input_a" />
+    <input placeholder="Enter B" id="input_b" />
+    <button onclick="generate_random_value();">Generate Random Value</button>
+    <div id="output_div"></div>
+
+    <script>
+        function generate_random_value() {
+            let a = parseInt(document.getElementById("input_a").value);
+            let b = parseInt(document.getElementById("input_b").value);
+
+            // Generate random value between a and b
+            let random_value = Math.floor(Math.random() * (b - a + 1)) + a;
+
+            // Display the random value in the output div
+            document.getElementById("output_div").innerHTML = "Random Value: " + random_value;
+
+            // Log a random value for testing
+            let x = Math.random();
+            console.log(x);
+        }
+    </script>
+
+</body>
+
+</html>
