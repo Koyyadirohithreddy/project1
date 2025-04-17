@@ -1,32 +1,62 @@
 body {
-  margin: 0;
-  font-family: sans-serif;
+  margin: 100;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  background-color: #aaa6a3; 
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+
+nav#taskList {
+  width: 220px;
+  background: #0c0702; 
+  padding: 10px;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
-header {
-  background: #222;
-  color: white;
-  padding: 15px;
-  text-align: center;
-}
-nav {
-  display: flex;
-  overflow-x: auto;
-  background: #f0f0f0;
-  padding: 10px;
-}
+
+
 nav button {
-  margin: 5px;
-  padding: 10px 15px;
+  margin: 5px 0;
+  padding: 10px;
   border: none;
-  background: #007BFF;
+  background: #1a197a; 
   color: white;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 4px;
+  text-align: left;
+  transition: background 0.3s ease;
 }
+
+nav button:hover {
+  background: #a0522d; 
+}
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #fffaf5;
+}
+
+header {
+  background: #762eb9; 
+  color: #d53519;       
+  padding: 10px;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
 iframe {
   flex: 1;
-  height: 80vh;
+  width: 100%;
   border: none;
+  background-color: #ffffff;
 }
